@@ -1,5 +1,5 @@
 <?php
-class connection{
+class database{
 
 	var $connection;
 	
@@ -21,7 +21,7 @@ class connection{
 		}
 	}
 	public function query($query){
-		return new result(mysql_query($query));
+		return mysql_query($query);
 	}
 	
 	public function close(){

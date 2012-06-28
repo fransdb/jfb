@@ -1109,11 +1109,14 @@ class Slim {
             }
 
             //Send headers
+            
             foreach ( $header as $name => $value ) {
                 $hValues = explode("\n", $value);
                 foreach ( $hValues as $hVal ) {
                     header("$name: $hVal", false);
                 }
+                	header("API developer: Frans de Boer", true);
+                	header("Website: www.frans-deboer.nl", false);
             }
         }
 

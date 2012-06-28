@@ -67,35 +67,35 @@ class Slim_Http_Response implements ArrayAccess, Countable, IteratorAggregate {
     /**
      * @var array HTTP response codes and messages
      */
-    protected static $messages = array(
+     protected static $messages = array(
         //Informational 1xx
         100 => '100 Continue',
         101 => '101 Switching Protocols',
         //Successful 2xx
-        200 => '200 OK',
-        201 => '201 Created',
-        202 => '202 Accepted',
-        203 => '203 Non-Authoritative Information',
-        204 => '204 No Content',
-        205 => '205 Reset Content',
-        206 => '206 Partial Content',
+        200 => '200 Everything is cool!',
+        201 => '201 We are cool. It\'s created',
+        202 => '202 Ok ok, accepted.. easy!',
+        203 => '203 No need to sign in to see this!!1!',
+        204 => '204 Nothing to see inhere',
+        205 => '205 Shit! we\'ve been reset',
+        206 => '206 Almost there.. We lost half of it...',
         //Redirection 3xx
-        300 => '300 Multiple Choices',
-        301 => '301 Moved Permanently',
-        302 => '302 Found',
-        303 => '303 See Other',
-        304 => '304 Not Modified',
-        305 => '305 Use Proxy',
+        300 => '300 We are confused...',
+        301 => '301 It is gone!',
+        302 => '302 I found it!',
+        303 => '303 Ask the dude over there',
+        304 => '304 It wasn\'t me!',
+        305 => '305 Get a proxy please!',
         306 => '306 (Unused)',
-        307 => '307 Temporary Redirect',
+        307 => '307 Get your ass back here later',
         //Client Error 4xx
-        400 => '400 Bad Request',
-        401 => '401 Unauthorized',
+        400 => '400 You made a mistake',
+        401 => '401 Screw you! Log in or GTFO!!!1!1',
         402 => '402 Payment Required',
-        403 => '403 Forbidden',
-        404 => '404 Not Found',
+        403 => '403 Screw you! Log in or GTFO!!!1!1',
+        404 => '404 You screwed up! Or did we?!',
         405 => '405 Method Not Allowed',
-        406 => '406 Not Acceptable',
+        406 => '406 No way duuuuuuuude!',
         407 => '407 Proxy Authentication Required',
         408 => '408 Request Timeout',
         409 => '409 Conflict',
@@ -110,13 +110,14 @@ class Slim_Http_Response implements ArrayAccess, Countable, IteratorAggregate {
         422 => '422 Unprocessable Entity',
         423 => '423 Locked',
         //Server Error 5xx
-        500 => '500 Internal Server Error',
-        501 => '501 Not Implemented',
-        502 => '502 Bad Gateway',
-        503 => '503 Service Unavailable',
-        504 => '504 Gateway Timeout',
+        500 => '500 Our server died...',
+        501 => '501 We didn\'t pay for this in time...',
+        502 => '502 We chose the wrong gateway!',
+        503 => '503 We are too busy to help you right now',
+        504 => '504 We are too busy to help you right now',
         505 => '505 HTTP Version Not Supported'
     );
+
 
     /**
      * Constructor
